@@ -1,0 +1,12 @@
+# Python dependencies for passc_transient_hybrid_pinn_fem
+#
+# Note: FEniCS must be installed separately via Conda or Docker.
+# See: https://fenicsproject.org/download/
+#
+# Recommended install (after FEniCS is active):
+#   pip install -r requirements.txt
+
+numpy>=1.21
+scipy>=1.7
+matplotlib>=3.5
+torch>=1.13
