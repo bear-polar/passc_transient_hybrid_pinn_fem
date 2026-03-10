@@ -66,7 +66,7 @@ pip install -r requirements.txt
 
 ## Alternative Installation
 
-In case there are conflict (particularly with the `sympy` dependency and if you need to use an older CUDA version for `torch`, for instance for `cuda 12.6`), then it is best to create a python virtual environment:
+In case there are conflicts (particularly with the `sympy` dependency and if you need to use an older CUDA version for `torch`, for instance for `cuda 12.6`), then it is best to create a python virtual environment:
 
 ```bash
 micromamba create -n fenicsproject_with_cuda -c conda-forge python=3.10
@@ -97,10 +97,12 @@ micromamba install matplotlib scipy
 Each solver script is fully self-contained. To run Example 1 (1D boundary layer):
 
 ```bash
-python solver_one_lwc.py
+mkdir -p results
+cd results
+python ../solver_one_lwc.py
 ```
 
-To run Example 3 (traveling wave):
+Or, directly, to run Example 3 (traveling wave):
 
 ```bash
 python solver_four_hybrid_lwc.py
