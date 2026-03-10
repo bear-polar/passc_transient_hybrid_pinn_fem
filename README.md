@@ -85,9 +85,11 @@ Finally,
 ```bash
 git clone https://github.com/bear-polar/passc_transient_hybrid_pinn_fem.gi
 cd passc_transient_hybrid_pinn_fem
-
+# install fenics and the repo dependencies
 micromamba install fenics -c conda-forge
 micromamba install matplotlib scipy
+```
+
 ---
 
 ## Running the Examples
